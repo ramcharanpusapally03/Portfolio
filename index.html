@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramcharan Pusapally | Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Ramcharan Pusapally - Software Developer & CS Student.">
+  <meta name="theme-color" content="#191919" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;600;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav-clean" id="navbar">
+    <a href="#" style="text-decoration: none; font-weight: 600; font-size: 1.25rem; font-family: var(--font-display); color: inherit;">
+      R.P.
+    </a>
+    <div class="nav-links hidden md:flex">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero max-w-screen" id="home">
+    <div class="reveal-up">
+      <h1 style="margin-bottom: 0;">Ramcharan <br>Pusapally.</h1>
+    </div>
+    <div class="reveal-up delay-1">
+      <p class="hero-subtitle">
+        I am a Computer Science engineering student and developer based in India. I specialize in building robust full-stack applications and engineering real-time IoT embedded solutions that bridge technical complexity with real user needs.
+      </p>
+    </div>
+    <div class="reveal-up delay-2" style="margin-top: 3rem; display: flex; gap: 1rem;">
+      <a href="#work" class="btn-minimal btn-solid">Selected Work</a>
+      <a href="#contact" class="btn-minimal">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="section-padding max-w-screen" id="work">
+    <h3 style="margin-bottom: 4rem; font-weight: 300;">Selected Projects</h3>
+    
+    <div class="project-card reveal-up">
+      <div class="project-meta">
+        <span>01</span>
+        <span>IoT & Embedded</span>
+        <span>5–6 Weeks</span>
+      </div>
+      <h2 class="project-title">Real-Time Driver Drowsiness Detection</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; font-weight: 300; line-height: 1.6;">
+        An intelligent multi-sensor embedded safety system that actively detects driver eye-closure duration and abnormal heart rate spikes, instantly triggering audio/visual alerts and emergency GSM SMS dispatches with 93%+ accuracy.
+      </p>
+      <div style="margin-top: 1rem;">
+        <button onclick="openProjectModal('driver-drowsiness')" class="btn-minimal" style="padding: 0.75rem 1.5rem; font-size: 0.75rem;">View Architecture</button>
+      </div>
+    </div>
+
+    <div class="project-card reveal-up delay-1">
+      <div class="project-meta">
+        <span>02</span>
+        <span>Data & Community</span>
+        <span>June - July 2026</span>
+      </div>
+      <h2 class="project-title">CDP - Environmental Awareness</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; font-weight: 300; line-height: 1.6;">
+        Led digital data collection, environmental impact analysis, and grassroots sustainability advocacy in partnership with Times Foundations and Lovely Professional University.
+      </p>
+    </div>
+
+    <div class="project-card reveal-up delay-2">
+      <div class="project-meta">
+        <span>03</span>
+        <span>Web & Full Stack</span>
+        <span>Ongoing</span>
+      </div>
+      <h2 class="project-title">Modern React Architecture</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; font-weight: 300; line-height: 1.6;">
+        Architected modern web interfaces using clean reusable components, reactive state management, asynchronous data fetching, and fluid UI patterns.
+      </p>
+    </div>
+  </section>
+
+  <!-- About & Skills Section -->
+  <section class="section-padding max-w-screen" id="about" style="background-color: var(--bg-secondary);">
+    <div class="grid-2">
+      <div class="reveal-up">
+        <h3 style="margin-bottom: 2rem; font-weight: 300;">My Approach</h3>
+        <p style="color: var(--text-secondary); font-weight: 300; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.1rem;">
+          My approach combines rigorous analytical engineering with clean code architecture to create scalable products that are both functional and performant. 
+        </p>
+        <p style="color: var(--text-secondary); font-weight: 300; line-height: 1.8; font-size: 1.1rem;">
+          Currently pursuing my B.Tech in Computer Science at Lovely Professional University, I focus on solving complex problems across hardware (IoT, Arduino, Sensors) and software (React, JS, Python, DBMS).
+        </p>
+      </div>
+      
+      <div class="reveal-up delay-1">
+        <h3 style="margin-bottom: 2rem; font-weight: 300;">Capabilities</h3>
+        <ul class="minimal-list">
+          <li>
+            <div>
+              <div class="list-title">Frontend & Web</div>
+              <div class="list-subtitle">React.js, HTML5, CSS3, ES6+</div>
+            </div>
+            <div class="list-meta">Certified</div>
+          </li>
+          <li>
+            <div>
+              <div class="list-title">Embedded & IoT</div>
+              <div class="list-subtitle">Arduino, C/C++, Sensors, GSM, Proteus</div>
+            </div>
+            <div class="list-meta">Advanced</div>
+          </li>
+          <li>
+            <div>
+              <div class="list-title">Languages & Backend</div>
+              <div class="list-subtitle">JavaScript, Python, C/C++, DBMS</div>
+            </div>
+            <div class="list-meta">Proficient</div>
+          </li>
+          <li>
+            <div>
+              <div class="list-title">Tools & Leadership</div>
+              <div class="list-subtitle">Git, VS Code, Team Collaboration</div>
+            </div>
+            <div class="list-meta">Certified</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section-padding max-w-screen" id="education">
+    <h3 style="margin-bottom: 4rem; font-weight: 300;">Academic Journey</h3>
+    <ul class="minimal-list reveal-up">
+      <li>
+        <div>
+          <div class="list-title">Lovely Professional University</div>
+          <div class="list-subtitle">B.Tech - Computer Science and Engineering</div>
+        </div>
+        <div class="list-meta" style="text-align: right;">
+          <div>Aug 2025 – Present</div>
+          <div style="color: var(--text-primary);">CGPA: 6.87</div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div class="list-title">Jaya Junior College</div>
+          <div class="list-subtitle">Intermediate (TSBIE)</div>
+        </div>
+        <div class="list-meta" style="text-align: right;">
+          <div>May 2023 – Mar 2025</div>
+          <div style="color: var(--text-primary);">91.8%</div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div class="list-title">Jaya High School</div>
+          <div class="list-subtitle">Secondary Education (SSC)</div>
+        </div>
+        <div class="list-meta" style="text-align: right;">
+          <div>May 2022 – Mar 2023</div>
+          <div style="color: var(--text-primary);">93.0%</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Terminal Section -->
+  <section class="section-padding max-w-screen" id="terminal">
+    <div class="grid-2 align-center">
+      <div class="reveal-up">
+        <h3 style="margin-bottom: 2rem; font-weight: 300;">Developer CLI</h3>
+        <p style="color: var(--text-secondary); font-weight: 300; line-height: 1.8; margin-bottom: 2rem;">
+          Experience my portfolio directly via terminal. Try commands like <code style="background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 4px;">skills</code>, <code style="background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 4px;">projects</code>, <code style="background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 4px;">sudo hire</code>, or <code style="background: var(--bg-secondary); padding: 0.2rem 0.4rem; border-radius: 4px;">theme light</code>.
+        </p>
+      </div>
+      
+      <div class="minimal-terminal reveal-up delay-1">
+        <div id="terminal-output" style="max-height: 300px; overflow-y: auto;"></div>
+        <div class="terminal-input-row">
+          <span class="terminal-prompt">ramcharan@dev:~$</span>
+          <input type="text" id="terminal-input" class="terminal-input" placeholder="Type 'help'..." autocomplete="off">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-padding max-w-screen" id="contact" style="background-color: var(--bg-secondary);">
+    <div style="text-align: center; max-w: 800px; margin: 0 auto;" class="reveal-up">
+      <h2 style="margin-bottom: 2rem; font-weight: 300;">Let's build something.</h2>
+      <p style="color: var(--text-secondary); font-weight: 300; font-size: 1.25rem; margin-bottom: 3rem;">
+        Currently seeking internship and entry-level developer roles. I'm always open to discussing product design work or partnership opportunities.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:ramcharanpusapally3@gmail.com" class="btn-minimal btn-solid">Email Me</a>
+        <a href="https://www.linkedin.com/in/ramcharanpusapally03" target="_blank" class="btn-minimal">LinkedIn</a>
+        <a href="https://github.com/ramcharanpusapally03" target="_blank" class="btn-minimal">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-screen">
+    <div>
+      © 2026 Ramcharan Pusapally. All rights reserved.
+    </div>
+    <div style="display: flex; gap: 2rem;">
+      <a href="tel:+917815867359" style="color: inherit; text-decoration: none;">+91-7815867359</a>
+      <a href="mailto:ramcharanpusapally3@gmail.com" style="color: inherit; text-decoration: none;">ramcharanpusapally3@gmail.com</a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/terminal.js"></script>
+  <script>
+    // Minimal Nav Scroll Effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+
+    // Simple Theme Toggle Function for Terminal use
+    function setPortfolioTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+  </script>
+</body>
+</html>

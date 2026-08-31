@@ -1,0 +1,316 @@
+/* Elegant & Minimalist Design System - Zalak Patel / Awwwards Inspired */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;600;800&display=swap');
+
+:root {
+  --bg-primary: #191919;
+  --bg-secondary: #222222;
+  --bg-tertiary: #2a2a2a;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #6b6b6b;
+  
+  --accent: #ffffff;
+  --accent-muted: rgba(255, 255, 255, 0.1);
+  
+  --border-light: rgba(255, 255, 255, 0.1);
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #eaeaea;
+  
+  --text-primary: #191919;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+  
+  --accent: #191919;
+  --accent-muted: rgba(0, 0, 0, 0.05);
+  
+  --border-light: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(3rem, 8vw, 6.5rem); font-weight: 300; }
+h2 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 300; }
+h3 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
+
+/* Layout & Sections */
+.section-padding {
+  padding: 10vh 5vw;
+}
+
+.max-w-screen {
+  max-w: 1600px;
+  margin: 0 auto;
+}
+
+/* Minimalist Nav */
+.nav-clean {
+  background: transparent;
+  padding: 2rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  mix-blend-mode: difference;
+  color: #fff;
+  transition: padding 0.3s ease;
+}
+
+.nav-scrolled {
+  padding: 1.5rem 5vw;
+  background: var(--bg-primary);
+  mix-blend-mode: normal;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5vw;
+  padding-top: 10vh;
+}
+
+.hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-top: 2rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Minimalist Cards / Projects */
+.project-card {
+  border-top: 1px solid var(--border-light);
+  padding: 2rem 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-card:hover {
+  opacity: 0.7;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.project-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Buttons */
+.btn-minimal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  border-radius: 100px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-minimal:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.btn-solid {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: 1px solid var(--text-primary);
+}
+
+.btn-solid:hover {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+/* Animations */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: revealUpAnim 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes revealUpAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+
+/* Timeline & Lists */
+.minimal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.minimal-list li {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 640px) {
+  .minimal-list li {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.list-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.list-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.list-meta {
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+}
+
+/* Modals / Terminal */
+.minimal-terminal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.terminal-input-row {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.terminal-prompt {
+  color: var(--text-primary);
+  margin-right: 0.5rem;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  padding: 4rem 5vw;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
