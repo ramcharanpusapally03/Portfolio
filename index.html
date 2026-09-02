@@ -226,42 +226,15 @@
 
   <!-- Contact Section -->
   <section class="section-padding max-w-screen" id="contact" style="background-color: var(--bg-secondary);">
-    <div class="grid-2 align-center">
-      <div class="reveal-up">
-        <h2 style="margin-bottom: 1.5rem; font-weight: 300;">Let's build something.</h2>
-        <p style="color: var(--text-secondary); font-weight: 300; font-size: 1.15rem; line-height: 1.7; margin-bottom: 2rem;">
-          Currently seeking internship and entry-level developer roles. I'm always open to discussing product design work, embedded IoT solutions, or partnership opportunities.
-        </p>
-        
-        <div style="margin-bottom: 2rem;">
-          <h4 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.5rem;">Direct Email</h4>
-          <a href="mailto:ramcharanpusapally3@gmail.com" style="font-size: 1.25rem; font-weight: 400; color: var(--text-primary); text-decoration: none; border-bottom: 1px solid var(--border-light); padding-bottom: 4px; transition: opacity 0.3s ease;" class="hover-opacity">
-            ramcharanpusapally3@gmail.com
-          </a>
-        </div>
-
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="https://www.linkedin.com/in/ramcharanpusapally03" target="_blank" class="btn-minimal">LinkedIn</a>
-          <a href="https://github.com/ramcharanpusapally03" target="_blank" class="btn-minimal">GitHub</a>
-        </div>
-      </div>
-      
-      <div class="reveal-up delay-1">
-        <form class="minimal-form" onsubmit="sendEmail(event)">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" required placeholder="John Doe">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" required placeholder="john@example.com">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="4" required placeholder="Hello Ramcharan, I would like to discuss..."></textarea>
-          </div>
-          <button type="submit" class="btn-minimal btn-solid" style="width: 100%; margin-top: 1rem;">Send Direct Message</button>
-        </form>
+    <div style="text-align: center; max-w: 800px; margin: 0 auto;" class="reveal-up">
+      <h2 style="margin-bottom: 2rem; font-weight: 300;">Let's build something.</h2>
+      <p style="color: var(--text-secondary); font-weight: 300; font-size: 1.25rem; margin-bottom: 3rem;">
+        Currently seeking internship and entry-level developer roles. I'm always open to discussing product design work or partnership opportunities.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:ramcharanpusapally3@gmail.com" class="btn-minimal btn-solid">Email Me</a>
+        <a href="https://www.linkedin.com/in/ramcharanpusapally03" target="_blank" class="btn-minimal">LinkedIn</a>
+        <a href="https://github.com/ramcharanpusapally03" target="_blank" class="btn-minimal">GitHub</a>
       </div>
     </div>
   </section>
@@ -293,19 +266,6 @@
     // Simple Theme Toggle Function for Terminal use
     function setPortfolioTheme(theme) {
       document.documentElement.setAttribute('data-theme', theme);
-    }
-
-    // Handle Contact Form Email Sending
-    function sendEmail(event) {
-      event.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
-      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-      
-      window.location.href = `mailto:ramcharanpusapally3@gmail.com?subject=${subject}&body=${body}`;
     }
   </script>
 </body>
