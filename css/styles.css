@@ -467,6 +467,64 @@ h3 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
   flex: 1;
 }
 
+/* Forms */
+.minimal-form {
+  background: var(--bg-primary);
+  padding: 3rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .minimal-form {
+    padding: 2rem;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: var(--text-primary);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.hover-opacity:hover {
+  opacity: 0.6;
+}
+
 /* Footer */
 footer {
   padding: 4rem 5vw;
